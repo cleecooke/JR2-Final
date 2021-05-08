@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intention Timer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+  
+    <h1 class="navHeader">INTENTION TIMER</h1>
+
+
+    <div class="twoColumn">
+        
+        <!-- New Activity Section -->
+        <div class="newActivity__container">
+            <h1>New Activity</h1>
+            <form class="form__newActivity">
+                <h2>Select a category</h2>
+                    <div class="cat__options">
+                        <div class="cat__buttons" id="study">
+                            <img src="assets/Study.svg" alt="pic" id="study__img">
+                            <p class="unselected">Study</p>
+                        </div>
+                        <div class="cat__buttons" id="meditate">
+                            <img src="assets/Meditate.svg" alt="pic" id="meditate__img">
+                            <p>Meditate</p>
+                        </div>
+                        <div class="cat__buttons" id="excercise">
+                            <img src="assets/Excercise.svg" alt="pic" id="excercise__img">
+                            <p>Meditate</p>
+                        </div>
+                            
+                    </div>
+                <div class="intention">
+                    <div class="intent__accomplish">
+                        <p>What would you like to accomplish during this time?</p>
+                        <input type="text" size="70px">
+                    </div>
+                    <div class="intention__time">
+                        <div class="minutes" class="time__sections">
+                            <p>Minutes</p>
+                            <input type="text">
+                        </div>
+                        <div class="seconds" class="time__sections">
+                            <p>Seconds</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="startActivity">START ACTIVITY</button>
+            </form>
+        </div>
+
+
+        <!-- Past Activity Section -->
+        <div class="pastActivity__container">
+            <h1>Past Activity</h1>
+            <div class="past__info">
+                <p class="noActivities">
+                    You haven't logged any activities yet.<br>
+                    Complete the form to the left to get started!
+                </p>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- java -->
+    <script src="activity.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
